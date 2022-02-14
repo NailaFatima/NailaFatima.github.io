@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pharm-store-manage/static/css/main.3a0d0684.css",
+    "main.js": "/pharm-store-manage/static/js/main.94b22479.js",
+    "index.html": "/pharm-store-manage/index.html",
+    "main.3a0d0684.css.map": "/pharm-store-manage/static/css/main.3a0d0684.css.map",
+    "main.94b22479.js.map": "/pharm-store-manage/static/js/main.94b22479.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a0d0684.css",
+    "static/js/main.94b22479.js"
+  ]
+}

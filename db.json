@@ -1,0 +1,156 @@
+{
+  "meds": [
+    {
+      "id": 3,
+      "medicine": "Dolo",
+      "manufacturer": "Moderna",
+      "price": "20",
+      "stock": "20",
+      "discount": "10"
+    },
+    {
+      "id": 5,
+      "medicine": "Crocin",
+      "manufacturer": "Reddys Lab",
+      "price": "20",
+      "stock": "10",
+      "discount": "10"
+    },
+    {
+      "medicine": "Saridon",
+      "manufacturer": "Metlab",
+      "price": "10",
+      "stock": "6",
+      "discount": "10",
+      "id": 6
+    },
+    {
+      "medicine": "Meftal",
+      "manufacturer": "Mefta",
+      "price": "50",
+      "stock": "20",
+      "discount": "15",
+      "id": 7
+    },
+    {
+      "medicine": "Combiflam",
+      "manufacturer": "Wockardth",
+      "price": "25",
+      "stock": "10",
+      "discount": "10",
+      "id": 9
+    }
+  ],
+  "salesmen": [
+    {
+      "name": "Rahul",
+      "lname": "P",
+      "gender": "male",
+      "dob": "1995-01-25",
+      "experience": "3",
+      "id": 3
+    },
+    {
+      "name": "Preksha",
+      "lname": "Patil",
+      "gender": "female",
+      "dob": "1991-05-05",
+      "experience": "5",
+      "id": 4
+    },
+    {
+      "name": "Seema",
+      "lname": "D",
+      "gender": "female",
+      "dob": "1992-01-01",
+      "experience": "10",
+      "id": 5
+    },
+    {
+      "name": "Ameen",
+      "lname": "Sayani",
+      "gender": "male",
+      "dob": "1986-08-05",
+      "experience": "26",
+      "id": 6
+    }
+  ],
+  "orderlist": [
+    {
+      "saridon": "1",
+      "crocin": "1",
+      "id": 1
+    },
+    {
+      "saridon": "1",
+      "id": 2
+    },
+    {
+      "crocin": "1",
+      "id": 3
+    },
+    {
+      "crocin": "1",
+      "id": 4
+    },
+    {
+      "saridon": "2",
+      "id": 5
+    },
+    {
+      "saridon": "1",
+      "crocin": "1",
+      "id": 6
+    },
+    {
+      "objects": [
+        {
+          "saridon": "1"
+        },
+        "N"
+      ],
+      "id": 7
+    },
+    {
+      "objects": [
+        {
+          "saridon": "1"
+        },
+        "p"
+      ],
+      "id": 8
+    },
+    {
+      "objects": [
+        {
+          "saridon": "1"
+        },
+        "v"
+      ],
+      "id": 9
+    },
+    {
+      "objects": [
+        [],
+        ""
+      ],
+      "id": 10
+    },
+    {
+      "objects": [
+        [],
+        ""
+      ],
+      "id": 11
+    },
+    {
+      "objects": [
+        {
+          "saridon": "1"
+        },
+        "Hello"
+      ],
+      "id": 12
+    }
+  ]
+}

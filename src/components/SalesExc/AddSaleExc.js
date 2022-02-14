@@ -11,8 +11,8 @@ const AddSaleExc= ()=>{
   dob:"",
   experience:""  
    });
- 
- const { name, lname,gender, dob, experience } =emps;
+ // eslint-disable-next-line
+ const { name, lname, gender, dob, experience } =emps;
  const onInputChange= e =>{
     setEmp({ ...emps, [e.target.name]: e.target.value });
  };
@@ -20,7 +20,7 @@ const AddSaleExc= ()=>{
  const onSubmit= async e =>
  {
   e.preventDefault();
-  const res= await Axios.post("http://localhost:3003/salesmen", emps);
+   await Axios.post("http://localhost:3003/salesmen", emps);
   navigate("/Sales");
  };
 
@@ -64,14 +64,14 @@ return (
             <input type="radio" id="male" 
               name="gender" 
               value="male"
-              checked={emps.gender=="male"}
+              checked={emps.gender==="male"}
               onChange={e=>onInputChange(e)} 
               />
             <label for="male">Male</label>
             <input type="radio" id="female" 
             name="gender" 
             value="female"
-            checked={emps.gender=="female"}
+            checked={emps.gender==="female"}
             onChange={e=>onInputChange(e)} 
           />
             <label for="female">Female</label>

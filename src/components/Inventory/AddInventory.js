@@ -20,7 +20,7 @@ const AddInventory= ()=>{
  const onSubmit= async e =>
  {
   e.preventDefault();
-  const res= await Axios.post("http://localhost:3003/meds", med);
+  await Axios.post("http://localhost:3003/meds", med);
   navigate("/");
  };
 

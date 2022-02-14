@@ -14,12 +14,13 @@ const UpdateSale = ()=>{
    });
 
 
- 
+ // eslint-disable-next-line
  const { name, lname, gender, dob, experience } = emp;
  const onInputChange= e =>{
     setEmp({ ...emp, [e.target.name]: e.target.value });
  };
 
+// eslint-disable-next-line
   useEffect(()=>{
  	loadEmp();
  },[]);
@@ -27,7 +28,7 @@ const UpdateSale = ()=>{
  const onSubmit= async e =>
  {
   e.preventDefault();
-  const res= await Axios.put(`http://localhost:3003/salesmen/${id}`, emp);
+  await Axios.put(`http://localhost:3003/salesmen/${id}`, emp);
   navigate("/Sales");
  };
  const loadEmp = async () => {
@@ -66,14 +67,14 @@ const UpdateSale = ()=>{
             <input type="radio" id="male" 
               name="gender" 
               value="male"
-              checked={emp.gender=="male"}
+              checked={emp.gender==="male"}
               onChange={e=>onInputChange(e)} 
               />
             <label for="male">Male</label>
             <input type="radio" id="female" 
             name="gender" 
             value="female"
-            checked={emp.gender=="female"}
+            checked={emp.gender==="female"}
             onChange={e=>onInputChange(e)} 
           />
             <label for="female">Female</label>

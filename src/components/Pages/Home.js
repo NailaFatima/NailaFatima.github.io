@@ -45,8 +45,8 @@ const Home = () => {
 		  		<tbody>		
 		  		     { meds.map(( med, index)=> (
 
-		  			<tr> 				
-		  			  <td scope="row">{index + 1}</td>
+		  			<tr key={med.id}> 				
+		  			  <td>{index + 1}</td>
 				      <td>{med.medicine}</td>
 				      <td>{med.manufacturer}</td>
 				      <td>{med.price}</td>
@@ -55,7 +55,7 @@ const Home = () => {
 				      <td>
 				      	
 				      	<Link className="btn btn-outline-primary" to={`/Inventory/UpdateInventory/${med.id}`}>Edit </Link>
-				      	<Link className="btn btn-outline-primary" to={'/'} onClick={()=>deleteMed(med.id)}> Delete </Link>
+				      	<Link className="btn btn-outline-primary" to={'/Home'} onClick={()=>deleteMed(med.id)}> Delete </Link>
 				      </td>
 				    </tr>
 		  			

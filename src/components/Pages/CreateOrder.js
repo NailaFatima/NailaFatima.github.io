@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Axios from "axios";
 
 
@@ -12,7 +12,7 @@ const CreateOrder = () =>{
 	const [addItem,setAddItem]= useState([]);
 	const order= {objects: [addItem,pname]}
 	const {mname, qty} = prsp;
-	 const { id, medicine, manufacturer, price, stock, discount } = med;
+	 // const { id, medicine, manufacturer, price, stock, discount } = med;
 	 // const[mPrice,setMPrice]=useState('');
 	useEffect(()=>{
 		loadMed();
@@ -59,7 +59,7 @@ const CreateOrder = () =>{
 	const handleClick=async (e)=>{
 		e.preventDefault();
 		
-		const res= await Axios.post("http://localhost:3003/orderlist",order);
+		await Axios.post("http://localhost:3003/orderlist",order);
 		console.log(order);
 		
 		
@@ -100,8 +100,8 @@ const CreateOrder = () =>{
 	   		
 	   		{show?<div className="dataList stack-tops">
 	   			   		<ul>
-	   			   		{medNames.map((m)=>(
-	   			   			<a><li className="dataItem" key={m.id}>{m.medicine}</li></a>
+	   			   		{medNames.map((m,index)=>(
+	   			   			<li className="dataItem" key={m.id}>{m.medicine}</li>
 	   			   			))}
 	   			   		</ul>
 	   			   	</div>:null}

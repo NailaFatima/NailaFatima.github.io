@@ -1,12 +1,6 @@
-import React,{useState, useEffect} from 'react';
-import  ReactDOM from 'react-dom';
-// import Home from "./components/Pages/Home";
-import {useNavigate} from 'react-router-dom';
-
-
-const Login = () =>{
-         let navigate= useNavigate();
-         const [isSubmitted, setIsSubmitted] = useState(false);
+import React,{useState} from 'react';
+const Login = () =>{         
+         // const [isSubmitted, setIsSubmitted] = useState(false);
          const [errorMessages, setErrorMessages] = useState({});
         
          const database = [
@@ -24,10 +18,7 @@ const Login = () =>{
           pass: "invalid password"
         };
 
-       // useEffect(()=>{
-       //    if(isSubmitted==true){ return navigate("/Home")}
-       //    else{ return navigate("/")}
-       //  },[]); 
+       
     const handleSubmit=(e)=>{
         e.preventDefault();
         var { uname, pass } = document.forms[0];
@@ -39,7 +30,7 @@ const Login = () =>{
                 
                 setErrorMessages({ name: "pass", message: errors.pass });
               } else {
-                setIsSubmitted(true);
+                // setIsSubmitted(true);
                 
                 window.location.href="/Home";
               }

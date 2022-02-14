@@ -2,14 +2,14 @@ import React,{useState, useEffect} from 'react';
 import Axios from 'axios';
 
 const Orders = () =>{
-	const [orderlist,setOrderList]=useState([])
-	useEffect(()=>{
-      loadOrder();
-	},[]);
-	const loadOrder= async ()=>{
-		const res= await Axios.get("http://localhost:3003/orderlist");
-		setOrderList(res.data);
-	};
+	// const [orderlist,setOrderList]=useState([])
+	// useEffect(()=>{
+ //      loadOrder();
+	// },[]);
+	// const loadOrder= async ()=>{
+	// 	const res= await Axios.get("http://localhost:3003/orderlist");
+	// 	// setOrderList(res.data);
+	// };
 	return(
 	   <div className="col-md-10 w-75 mx-auto shadow p-5">
 	   	<h1 className="text-center mt-4">Order</h1> 

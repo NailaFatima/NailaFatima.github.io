@@ -19,7 +19,7 @@ const UpdateInventory = ()=>{
  const onInputChange= e =>{
     setMed({ ...med, [e.target.name]: e.target.value });
  };
-
+// eslint-disable-next-line
   useEffect(()=>{
  	loadMeds();
  },[]);
@@ -27,8 +27,8 @@ const UpdateInventory = ()=>{
  const onSubmit= async e =>
  {
   e.preventDefault();
-  const res= await Axios.put(`http://localhost:3003/meds/${id}`, med);
-  navigate("/");
+   await Axios.put(`http://localhost:3003/meds/${id}`, med);
+  navigate("/Home");
  };
  const loadMeds = async () => {
     const result = await Axios.get(`http://localhost:3003/meds/${id}`);

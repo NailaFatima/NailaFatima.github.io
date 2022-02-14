@@ -46,8 +46,8 @@ const Sales = () => {
 		  		<tbody>		
 		  		     { emps.map(( emp, index)=> (
 
-		  			<tr> 				
-		  			  <td scope="row">{index + 1}</td>
+		  			<tr key={index}> 				
+		  			  <td>{index + 1}</td>
 				      <td>{emp.name}</td>
 				      <td>{emp.lname}</td>
 				      <td>{emp.gender}</td>

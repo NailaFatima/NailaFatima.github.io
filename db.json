@@ -17,28 +17,12 @@
       "discount": "10"
     },
     {
-      "medicine": "Saridon",
-      "manufacturer": "Metlab",
-      "price": "10",
-      "stock": "6",
-      "discount": "10",
-      "id": 6
-    },
-    {
       "medicine": "Meftal",
       "manufacturer": "Mefta",
       "price": "50",
       "stock": "20",
       "discount": "15",
       "id": 7
-    },
-    {
-      "medicine": "Combiflam",
-      "manufacturer": "Wockardth",
-      "price": "25",
-      "stock": "10",
-      "discount": "10",
-      "id": 9
     }
   ],
   "salesmen": [

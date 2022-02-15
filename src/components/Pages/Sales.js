@@ -7,6 +7,7 @@ const Sales = () => {
 	const [emps,setEmp]=useState([]);
 
 	useEffect(()=>{
+		
 		loadEmp();
 	},[]);
 
@@ -15,7 +16,7 @@ const Sales = () => {
 		
 		setEmp(res.data.reverse());	
 		 
-	};
+			};
 
 	const deleteEmp = async (id) => {
 		if(window.confirm("Are You Sure You want to Delete It"))

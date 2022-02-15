@@ -7,6 +7,7 @@ const Home = () => {
 	const [meds,setMeds]=useState([]);
 
 	useEffect(()=>{
+		
 		loadMeds();
 	},[]);
 
@@ -15,7 +16,7 @@ const Home = () => {
 		
 		setMeds(res.data.reverse());	
 		// console.log(res.data);
-	};
+		};
 
 	const deleteMed = async (id) => {
 		if(window.confirm("Are You Sure You want to Delete It"))

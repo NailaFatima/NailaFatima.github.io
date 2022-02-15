@@ -15,15 +15,16 @@ const CreateOrder = () =>{
 	 // const { id, medicine, manufacturer, price, stock, discount } = med;
 	 // const[mPrice,setMPrice]=useState('');
 	useEffect(()=>{
+		const loadMed= async ()=>{
+			const res= await Axios.get("http://localhost:3003/meds")
+			setMed(res.data);
+									
+	       };
 		loadMed();
 	},[]);
 
 
-	const loadMed= async ()=>{
-			const res= await Axios.get("http://localhost:3003/meds")
-			setMed(res.data);
-									
-	};
+	
 
 	const filterMeds = (e) =>{
 		setShow(true);

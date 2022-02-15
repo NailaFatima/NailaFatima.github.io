@@ -22,6 +22,11 @@ const UpdateSale = ()=>{
 
 // eslint-disable-next-line
   useEffect(()=>{
+    const loadEmp = async () => {
+    const result = await Axios.get(`http://localhost:3003/salesmen/${id}`);
+    setEmp(result.data);
+    // console.log(result.data);
+  };
  	loadEmp();
  },[]);
 
@@ -31,11 +36,7 @@ const UpdateSale = ()=>{
   await Axios.put(`http://localhost:3003/salesmen/${id}`, emp);
   navigate("/Sales");
  };
- const loadEmp = async () => {
-    const result = await Axios.get(`http://localhost:3003/salesmen/${id}`);
-    setEmp(result.data);
-    // console.log(result.data);
-  };
+ 
 
 
 	return(

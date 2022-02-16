@@ -20,15 +20,16 @@ const UpdateSale = ()=>{
     setEmp({ ...emp, [e.target.name]: e.target.value });
  };
 
-// eslint-disable-next-line
-  useEffect(()=>{
-    const loadEmp = async () => {
+// eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect((loadEmp=loadEmp)=>{
+    
+ 	loadEmp();
+ },[]);
+  const loadEmp = async () => {
     const result = await Axios.get(`http://localhost:3003/salesmen/${id}`);
     setEmp(result.data);
     // console.log(result.data);
-  };
- 	loadEmp();
- },[]);
+  }
 
  const onSubmit= async e =>
  {
